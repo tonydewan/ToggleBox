@@ -1,0 +1,46 @@
+	div.toggleSwitch{
+		overflow: auto;
+		margin: 0 auto;
+	}
+	
+	div.toggleSwitch span.leftLabel{
+		float: left;
+	}
+	
+	div.toggleSwitch span.leftLabel, div.toggleSwitch span.rightLabel{
+		line-height: 24px;
+		font-size: 12px;
+		padding: 0 5px;
+		text-transform: uppercase;
+		float: left;
+	}
+	
+	div.toggleSwitch div.switchArea{
+		float: left;
+		background: transparent url("images/toggle.shadow-bg.png") top left no-repeat;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		border: 1px solid #555;
+		width: 64px;
+		height: 24px;
+	}
+	
+	div.toggleSwitch span.switchHandle{
+		display: block;
+		background: #aaa;
+		background: transparent url("images/toggle.handle-bg.png") top left no-repeat;
+		width: 30px;
+		height: 100%;
+		cursor: pointer;
+		cursor: hand;
+		margin-left: 0;
+	}
+	
+	div.toggleSwitch span.switchHandle.left{
+		background-image: url("images/toggle.handle_left-bg.png");
+	}
+
+	div.toggleSwitch span.switchHandle.right{
+		background-image: url("images/toggle.handle_right-bg.png");
+	}
