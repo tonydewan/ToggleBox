@@ -1,0 +1,56 @@
+
+/* Styles for positioning, animation */
+
+div.toggleSwitch{
+	overflow: auto;
+	margin: 0 auto;
+	position: relative;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+div.toggleSwitch span.onLabel, div.toggleSwitch span.offLabel{
+	line-height: 24px;
+	font-size: 12px;
+	padding: 0 5px;
+	float: left;
+}
+
+div.toggleSwitch div.switchArea{
+	float: left;
+	width: 64px;
+	height: 24px;}
+
+div.toggleSwitch span.switchHandle{
+	display: block;
+	width: 30px;
+	height: 100%;
+	cursor: pointer;
+	cursor: hand;
+	margin-left: 0;}
+
+
+/* Default Skin */
+
+div.toggleSwitch{
+	font-family: helvetica, arial, sans-serif;}
+
+div.toggleSwitch span.switchHandle{	background: #aaa url("images/toggle.handle_left-bg.png") top left no-repeat;}
+div.toggleSwitch.off span.switchHandle{	background-image: url("images/toggle.handle_right-bg.png");}
+
+
+div.toggleSwitch div.switchArea{ 
+	background: #5bb554 url("images/toggle.shadow-bg.png") top left no-repeat;
+	border: 1px solid #555;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;}
+div.toggleSwitch.off div.switchArea{ background-color: #F8837C;}
+
+
+div.toggleSwitch span.onLabel, div.toggleSwitch span.offLabel{ text-transform: uppercase; color: #333;}
+div.toggleSwitch span.onLabel, div.toggleSwitch.off span.offLabel{ color: #333;}
+div.toggleSwitch.off span.onLabel, div.toggleSwitch span.offLabel{ color: #ccc;}
+
+	

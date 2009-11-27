@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ToggleBox Example</title>
+
+	<link rel="stylesheet" href="jquery.togglebox.css" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="jquery.togglebox.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function(){
+			$('input[name="standard"]').toggleBox();
+			$('input[name="yesno"]').toggleBox({onLabel:'Yes', offLabel:'No'});
+		});
+	</script>
+</head>
+<body>
+	<h1>ToggleBox Example:</h1>
+	
+	<form id="example" method="post" action="/">
+		
+		<label for="standard">Turn me off!</label>
+		<input type="checkbox" name="standard" value="" checked="checked">
+
+		<label for="yesno">Is ToggleBox neat?</label>
+		<input type="checkbox" name="yesno" value="" checked="checked">
+
+	</form>
+</body>
+</html>
